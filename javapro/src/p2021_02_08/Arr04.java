@@ -14,13 +14,14 @@ public class Arr04 {
     int [] student = new int[5]; 		//학생의 총점 저장
         // subject[0]=0, student[0]=0;
     int  r, c;  
+    String[] sub = {"국어", "영어", "수학"};		// sub[0]="국어"; sub[1]="영어"; sub[2]="수학";
 	    
     System.out.println("각 과목별 총점구하기 ");
     for(c = 0; c < 3; c++){ 			// 과목         
       for(r = 0; r < 5; r++){ 			//학생      
         subject[c] += score[r][c];   
       }//subject[c] = subject[c] + score[r][c];
-      System.out.println(subject[c]);  
+      System.out.println(sub[c]+":"+subject[c]);  
     }
 
     System.out.println("학생별 총점구하기");
@@ -28,7 +29,7 @@ public class Arr04 {
       for(c = 0; c < 3; c++){  			//과목    
         student[r] += score[r][c];  
       }//student[r] = student[r] + score[r][c];
-      System.out.println(student[r]);
+      System.out.println((r+1)+"번 학생:"+student[r]);
     }
 
   }//main() end

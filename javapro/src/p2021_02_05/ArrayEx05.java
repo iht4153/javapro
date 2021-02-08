@@ -24,12 +24,14 @@ public class ArrayEx05 {
 	}// main() end
 	
 	// 사용자 정의 메소드 : 합을 구해주는 역할
-	public static int add(int[] scores) {
+	// 주소값 전달에 의한 메소드 호출방식(Call by reference방식)
+	public static int add(int[] scores) {	// 정적 메소드
 		int sum = 0;
 		for(int i=0; i<3; i++) {
 			sum += scores[i];
 		}
-		return sum;
+		return sum;					// return 구문 : 메소드 호출한 곳에 값을 돌려주는 역할
+//		System.out.println("test");	// return 구문은 가장 마지막 줄에 사용되어야 한다.
 	}
 
 }

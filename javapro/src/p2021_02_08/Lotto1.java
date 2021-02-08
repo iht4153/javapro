@@ -1,4 +1,4 @@
-﻿package test;
+﻿package p2021_02_08;
 
 class Lotto1 {
 
