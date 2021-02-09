@@ -30,10 +30,13 @@ public class ArrayMaxMin {
 		for(int i : s) {
 			System.out.print(i+"\t");
 		}
+		sc.close();
 		
 		System.out.println();
 		System.out.println("max : "+ max);
 		System.out.println("min : "+ min);
+	}
+}
 		
 //		int n1 = sc.nextInt();
 //		int n2 = sc.nextInt();
@@ -61,5 +64,5 @@ public class ArrayMaxMin {
 //		min = (n4 < n5) ? n4 : n5;
 //		min = (n5 < min) ? n5 : min;
 		
-	}
-}
+//	}
+//}
